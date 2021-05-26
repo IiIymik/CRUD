@@ -1,0 +1,10 @@
+{
+    "books":[
+{"vladik":"by"}
+    ],
+    "person":[
+        {
+            "sonia":"Hello"
+        }
+    ]
+}
