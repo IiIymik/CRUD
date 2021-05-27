@@ -2,9 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"MuPq":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.BASE_URL=void 0;var e="http://localhost:3000";exports.BASE_URL=e;
-},{}],"Q42x":[function(require,module,exports) {
-"use strict";var e=require("./constants"),n={name:"'Vlad Shumkov'",email:"'shereeanthony@kog.com'",eyeColor:"'brown'",friends:["'Goldie Gentry'"," 'Briana Decker'"],isActive:!0,balance:2764,gender:"'female'"};function r(n){var r={method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(n)};return fetch("".concat(e.BASE_URL,"/person"),r).then(function(e){return e.json()})}r(n);
+},{}],"Jhpy":[function(require,module,exports) {
+"use strict";var n=require("./constants");function t(t){var r="".concat(n.BASE_URL,"/person/").concat(t);return fetch(r,{method:"DELETE"}).then(function(n){return n.json()})}
 },{"./constants":"MuPq"}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/post.js");
-},{"./sass/main.scss":"clu1","./js/post.js":"Q42x"}]},{},["Focm"], null)
-//# sourceMappingURL=/CRUD/src.5a9de9ca.js.map
+"use strict";require("./sass/main.scss"),require("./js/delete.js");
+},{"./sass/main.scss":"clu1","./js/delete.js":"Jhpy"}]},{},["Focm"], null)
+//# sourceMappingURL=/CRUD/src.94da403e.js.map
