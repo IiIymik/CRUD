@@ -65,7 +65,7 @@
         "'Jordan Sampson'",
         "'Eddie Strong"
       ],
-      "isActive": true,
+      "isActive": false,
       "balance": 3951,
       "gender": "'male'"
     },
@@ -109,16 +109,7 @@
       "id": 7
     },
     {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
       "id": 10
-    },
-    {
-      "id": 11
     },
     {
       "name": "'Vlad Shumkov'",
