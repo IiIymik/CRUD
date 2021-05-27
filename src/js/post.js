@@ -13,15 +13,21 @@ const newPerson = {
     "gender": "'female'",
 };
 
-function addPerson(person) {
+async function addPerson(person) {
     const options = {
         "method": 'POST',
         "headers": {
             "Content-Type": 'application/json'
         },
         "body": JSON.stringify(person),
-    };
-    return fetch(`${BASE_URL}/person`, options).then(res=>res.json());
+  };
+  try {
+  const res = await fetch(`${BASE_URL}/person`, options);
+  const data = await res.json();
+  return data;
+  } catch (e) {
+    console.log(e);
+  }
 };
 
 addPerson(newPerson);

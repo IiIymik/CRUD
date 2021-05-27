@@ -109,9 +109,6 @@
       "id": 7
     },
     {
-      "id": 10
-    },
-    {
       "name": "'Vlad Shumkov'",
       "email": "'shereeanthony@kog.com'",
       "eyeColor": "'brown'",
@@ -136,6 +133,32 @@
       "balance": 2764,
       "gender": "'female'",
       "id": 13
+    },
+    {
+      "name": "'Vlad Shumkov'",
+      "email": "'shereeanthony@kog.com'",
+      "eyeColor": "'brown'",
+      "friends": [
+        "'Goldie Gentry'",
+        " 'Briana Decker'"
+      ],
+      "isActive": true,
+      "balance": 2764,
+      "gender": "'female'",
+      "id": 14
+    },
+    {
+      "name": "'Vlad Shumkov'",
+      "email": "'shereeanthony@kog.com'",
+      "eyeColor": "'brown'",
+      "friends": [
+        "'Goldie Gentry'",
+        " 'Briana Decker'"
+      ],
+      "isActive": true,
+      "balance": 2764,
+      "gender": "'female'",
+      "id": 15
     }
   ]
 }

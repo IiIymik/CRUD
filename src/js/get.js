@@ -1,11 +1,23 @@
 import { BASE_URL } from './constants';
 
-function fetchPersons() {
-    return fetch(`${BASE_URL}/person`).then(res => res.json());
+async function fetchPersons() {
+  try {
+    const res = await fetch(`${BASE_URL}/person`);
+    const data = await res.json();
+    return data;
+  } catch (e) {
+    console.log(e);
+}
 };
 
-function fetchPersonById(personId) {
-return fetch(`${BASE_URL}/person/${personId}`).then(res => res.json())
+async function fetchPersonById(personId) {
+  try {
+    const res = await fetch(`${BASE_URL}/person/${personId}`);
+    const data = await res.json();
+    return data;
+  } catch {
+    console.log(Error);
+  }
 };
 
 fetchPersons();

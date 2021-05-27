@@ -1,12 +1,18 @@
 import { BASE_URL } from './constants';
 
-function removePerson(personId) {
+async function removePerson(personId) {
   const url = `${BASE_URL}/person/${personId}`;
   const options = {
     method: 'DELETE',
   };
-  return fetch(url, options).then(res => res.json());
+  try {
+    const res = await fetch(url, options);
+  const data = await res.json();
+  return data;
+  } catch (e) {
+    console.log(e);
+  }
 }
 
-// removePerson(9);
+removePerson(10);
 // removePerson(11);

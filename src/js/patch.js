@@ -1,6 +1,6 @@
 import { BASE_URL } from './constants';
 
-function updatePersonById(update, personId) {
+async function updatePersonById(update, personId) {
   const optins = {
     method: 'PATCH',
     headers: {
@@ -8,9 +8,13 @@ function updatePersonById(update, personId) {
     },
     body: JSON.stringify(update),
   };
-
-  return fetch(`${BASE_URL}/person/${personId}`, optins)
-    .then(res => res.json);
+  try {
+    const res = await fetch(`${BASE_URL}/person/${personId}`, optins);
+    const data = await res.json();
+    return data;
+  } catch (e) {
+    console.log(e);
+  }
 };
 
-updatePersonById({ "eyeColor": "brown" }, 5);
+// updatePersonById({ "eyeColor": "yelow" }, 5);
